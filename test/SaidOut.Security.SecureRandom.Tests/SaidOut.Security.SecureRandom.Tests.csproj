@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SaidOut.Security.Tests</RootNamespace>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp1.1;netcoreapp1.0;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+    <Authors>Said Outgajjouft</Authors>
+    <Copyright>2017 Said Outgajjouft</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="NUnit" Version="3.8.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SaidOut.Security.SecureRandom\SaidOut.Security.SecureRandom.csproj" />
+  </ItemGroup>
+
+</Project>
