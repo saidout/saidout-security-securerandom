@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <RootNamespace>SaidOut.Security</RootNamespace>
-    <TargetFrameworks>netstandard2.0;netstandard1.6;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Authors>Said Outgajjouft</Authors>
     <Description>Contain classes that generate random data/value using a cryptographic random number generator.</Description>
-    <Copyright>Said Outgajjouft</Copyright>
+    <Copyright>2017 Said Outgajjouft</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/saidout/saidout-security-securerandom/raw/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/saidout/saidout-security-securerandom</PackageProjectUrl>
@@ -13,6 +13,14 @@
     <RepositoryUrl>https://github.com/saidout/saidout-security-securerandom</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>random data; random number; random value; secure random number generator</PackageTags>
+
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <PackageReleaseNotes>Bug fix SecureRandomContext.GenerateRandomValue generated a new random generated instead of reusing the one associated with the class.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <TargetFrameworks>netstandard2.0;netstandard1.6;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

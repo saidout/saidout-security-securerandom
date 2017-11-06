@@ -39,16 +39,13 @@ namespace SaidOut.Security
             if (_secRngGen == null) throw new ObjectDisposedException(GetType().FullName);
             if (max <= min) throw new ArgumentException(ExceptionMessages.MaxCannotBeLessOrEqualToMin, nameof(max));
 
-            // Important to cast max too long to avoid overflow when min = int.MinValue and max = int.MaxValue
+            // Cast to long is done to avoid overflow when min = int.MinValue and max = int.MaxValue
             var elemInRange = (long)max - min + 1;
             var randomData = new byte[4];
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                rng.GetBytes(randomData);
-                var randomInt = BitConverter.ToUInt32(randomData, 0);
-                var mod = randomInt % elemInRange;
-                return (int)(min + mod);
-            }
+            _secRngGen.GetBytes(randomData);
+            var randomInt = BitConverter.ToUInt32(randomData, 0);
+            var mod = randomInt % elemInRange;
+            return (int)(min + mod);
         }
 
 
