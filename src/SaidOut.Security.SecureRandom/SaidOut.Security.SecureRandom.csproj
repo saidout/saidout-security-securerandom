@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>SaidOut.Security</RootNamespace>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Authors>Said Outgajjouft</Authors>
     <Description>Contain classes that generate random data/value using a cryptographic random number generator.</Description>
-    <Copyright>2017 Said Outgajjouft</Copyright>
+    <Copyright>© 2017 Said Outgajjouft</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseUrl>https://github.com/saidout/saidout-security-securerandom/raw/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/saidout/saidout-security-securerandom</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/saidout/saidout-security-securerandom/raw/master/saidout_icon32x32.png</PackageIconUrl>
+    <PackageIcon>saidout_icon32x32.png</PackageIcon>
     <RepositoryUrl>https://github.com/saidout/saidout-security-securerandom</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>random data; random number; random value; secure random number generator</PackageTags>
@@ -19,8 +19,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <TargetFrameworks>netstandard2.0;netstandard1.6;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.6;net472;net471;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" PackagePath="\"/>
+    <None Include="../../saidout_icon32x32.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>

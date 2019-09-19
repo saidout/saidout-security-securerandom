@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>SaidOut.Security.Tests</RootNamespace>
     <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
     <Authors>Said Outgajjouft</Authors>
-    <Copyright>2017 Said Outgajjouft</Copyright>
+    <Copyright>© 2017 Said Outgajjouft</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <TargetFrameworks>netcoreapp2.0;netcoreapp1.1;netcoreapp1.0;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.2;netcoreapp2.1;netcoreapp2.0;netcoreapp1.1;netcoreapp1.0;net472;net471;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
