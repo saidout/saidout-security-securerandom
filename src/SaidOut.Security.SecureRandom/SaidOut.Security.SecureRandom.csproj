@@ -14,8 +14,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>random data; random number; random value; secure random number generator</PackageTags>
 
-    <VersionPrefix>1.0.1</VersionPrefix>
-    <PackageReleaseNotes>Bug fix SecureRandomContext.GenerateRandomValue generated a new random generated instead of reusing the one associated with the class.</PackageReleaseNotes>
+    <VersionPrefix>1.0.2</VersionPrefix>
+    <PackageReleaseNotes>Added support for net472 and net471.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
