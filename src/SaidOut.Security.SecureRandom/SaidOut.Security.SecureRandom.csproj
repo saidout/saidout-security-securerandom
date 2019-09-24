@@ -2,11 +2,10 @@
 
   <PropertyGroup>
     <RootNamespace>SaidOut.Security</RootNamespace>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Authors>Said Outgajjouft</Authors>
     <Description>Contain classes that generate random data/value using a cryptographic random number generator.</Description>
     <Copyright>© 2017 Said Outgajjouft</Copyright>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/saidout/saidout-security-securerandom</PackageProjectUrl>
     <PackageIcon>saidout_icon32x32.png</PackageIcon>
@@ -18,8 +17,8 @@
     <PackageReleaseNotes>Added support for net472 and net471.</PackageReleaseNotes>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <TargetFrameworks>netstandard2.0;netstandard1.6;net472;net471;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TargetFrameworks>netstandard2.1;netstandard2.0;netstandard1.6;net48;net472;net471;net47;net462;net461;net46;net452;net451;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
