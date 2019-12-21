@@ -13,8 +13,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>random data; random number; random value; secure random number generator</PackageTags>
 
-    <VersionPrefix>1.0.3</VersionPrefix>
-    <PackageReleaseNotes>Added support for netstandard2.1 and net48.</PackageReleaseNotes>
+    <VersionPrefix>1.0.4</VersionPrefix>
+    <PackageReleaseNotes>Added xml documentation to package output.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
