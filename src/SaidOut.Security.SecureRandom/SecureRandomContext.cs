@@ -49,6 +49,7 @@ namespace SaidOut.Security
         }
 
 
+        /// <summary>Releases the <see cref="RandomNumberGenerator"/> held by the context.</summary>
         public void Dispose()
         {
             _secRngGen?.Dispose();
